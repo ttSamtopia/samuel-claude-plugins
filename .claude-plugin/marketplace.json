@@ -7,20 +7,12 @@
   "plugins": [
     {
       "name": "blast-radius",
-      "source": {
-        "source": "git-subdir",
-        "url": "anthropics/claude-code-playground",
-        "path": "claude-code/mods/blast-radius"
-      },
+      "source": "./plugins/blast-radius",
       "description": "Anthropic sample mod: holds risky shell commands until you confirm, with a preview of the damage"
     },
     {
       "name": "replay-theater",
-      "source": {
-        "source": "git-subdir",
-        "url": "anthropics/claude-code-playground",
-        "path": "claude-code/mods/replay-theater"
-      },
+      "source": "./plugins/replay-theater",
       "description": "Anthropic sample mod: replay the edits Claude made as a diff view"
     }
   ]

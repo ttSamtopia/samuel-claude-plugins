@@ -26,5 +26,5 @@ process.stdin.on("end", () => {
   }
 
   const isCommit = /\bgit\b[^|;&\n]*\bcommit\b/.test(cmd);
-  out("ask", "Git commit/push/history change: confirm the user asked for this exact action." + (isCommit ? " Reminder: run /code-review on the diff first." : ""));
+  out("ask", "Git commit/push/history change: confirm the user asked for this exact action." + (isCommit ? " Reminder: have you reviewed the diff? Ask for a review first if not." : ""));
 });

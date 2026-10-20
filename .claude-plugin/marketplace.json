@@ -14,6 +14,11 @@
       "name": "wrap-up",
       "source": "./plugins/wrap-up",
       "description": "/wrap saves the session: /remember, /revise-claude-md, then auto memory."
+    },
+    {
+      "name": "toolbox-guard",
+      "source": "./plugins/toolbox-guard",
+      "description": "Forces /toolbox-check after edits in repos that have the toolbox-check skill."
     }
   ]
 }

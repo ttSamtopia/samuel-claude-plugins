@@ -1,0 +1,6 @@
+{
+  "name": "toolbox-guard",
+  "version": "0.1.0",
+  "description": "In repos that have the toolbox-check skill, forces /toolbox-check after every edit to a .js, .html, .css or package.json file (outside dist/ and node_modules/).",
+  "author": { "name": "Samuel" }
+}

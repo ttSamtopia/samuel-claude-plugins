@@ -9,6 +9,11 @@
       "name": "git-guards",
       "source": "./plugins/git-guards",
       "description": "Blocks git commands that mention Claude or AI, asks before commits and history changes, and stops edits in generated folders"
+    },
+    {
+      "name": "wrap-up",
+      "source": "./plugins/wrap-up",
+      "description": "/wrap saves the session: /remember, /revise-claude-md, then auto memory."
     }
   ]
 }

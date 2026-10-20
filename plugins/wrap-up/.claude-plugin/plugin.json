@@ -1,6 +1,7 @@
 {
   "name": "wrap-up",
-  "version": "0.3.0",
-  "description": "/wrap runs the remember skill, then revise-claude-md, then saves what is worth keeping to auto memory. A short toast reminds you after the first edit.",
-  "author": { "name": "Samuel" }
+  "version": "0.4.0",
+  "description": "/wrap runs the remember skill, then revise-claude-md, then saves what is worth keeping to auto memory. A row in the prompt band reminds you when the session has unsaved changes.",
+  "author": { "name": "Samuel" },
+  "types": "./types/index.d.ts"
 }

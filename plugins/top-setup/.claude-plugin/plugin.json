@@ -1,0 +1,6 @@
+{
+  "name": "top-setup",
+  "version": "0.1.0",
+  "description": "/top-setup sets up a new Odin Project repo by following section 6 of Project - Brief.md.",
+  "author": { "name": "Samuel" }
+}

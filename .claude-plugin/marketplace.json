@@ -19,6 +19,11 @@
       "name": "toolbox-guard",
       "source": "./plugins/toolbox-guard",
       "description": "Forces /toolbox-check after edits in repos that have the toolbox-check skill."
+    },
+    {
+      "name": "top-setup",
+      "source": "./plugins/top-setup",
+      "description": "/top-setup sets up a new Odin Project repo by following the Project Brief."
     }
   ]
 }

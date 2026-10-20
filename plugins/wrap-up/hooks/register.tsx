@@ -8,7 +8,7 @@ const isHidden = atom({ plugin: 'wrap-up', key: 'isHidden' } as const, false)
 const EDIT_TOOLS = ['Write', 'Edit', 'MultiEdit', 'NotebookEdit']
 
 const WRAP_TEXT =
-  'Wrap up this session. Run /remember, then /revise-claude-md, then save anything worth keeping to auto memory. Keep it short.'
+  'Wrap up this session. Use the remember skill (remember:remember), then the revise-claude-md skill (claude-md-management:revise-claude-md), then save anything worth keeping to auto memory. Keep it short.'
 
 export const register: Register = on => {
   on('session.start', async ($, e, next) => {
@@ -23,7 +23,8 @@ export const register: Register = on => {
   on('command.run', { command: 'wrap' }, async $ => {
     await update($, changed, () => false)
     await update($, isHidden, () => false)
-    void $.prompt.submit({ text: WRAP_TEXT, asUser: true })
+    // Sent after this command returns, so the session is idle and it becomes its own turn.
+    $.clock.after(300, () => void $.prompt.submit({ text: WRAP_TEXT, asUser: true }))
 
     return { text: 'Wrapping up this session.' }
   })

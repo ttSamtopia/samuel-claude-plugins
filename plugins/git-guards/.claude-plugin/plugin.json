@@ -1,0 +1,8 @@
+{
+  "name": "git-guards",
+  "version": "0.1.0",
+  "description": "Blocks git commands that mention Claude or AI, asks before commits and history changes, and stops edits inside dist, build, .next and node_modules.",
+  "author": {
+    "name": "Samuel"
+  }
+}

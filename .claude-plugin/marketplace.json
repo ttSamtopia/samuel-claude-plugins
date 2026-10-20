@@ -6,14 +6,9 @@
   },
   "plugins": [
     {
-      "name": "blast-radius",
-      "source": "./plugins/blast-radius",
-      "description": "Anthropic sample mod: holds risky shell commands until you confirm, with a preview of the damage"
-    },
-    {
-      "name": "replay-theater",
-      "source": "./plugins/replay-theater",
-      "description": "Anthropic sample mod: replay the edits Claude made as a diff view"
+      "name": "git-guards",
+      "source": "./plugins/git-guards",
+      "description": "Blocks git commands that mention Claude or AI, asks before commits and history changes, and stops edits in generated folders"
     }
   ]
 }
